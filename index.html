@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<!-- http://webdesign.tutsplus.com/tutorials/create-a-parallax-scrolling-website-using-stellar-js--webdesign-7307 -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>UCLA LoL for Charity</title>
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+
+    <script type="text/javascript">
+$(document).ready(function(){
+
+			$("#ajax-contact-form").submit(function() {
+
+				var str = $(this).serialize();
+
+				$.ajax({
+
+					type: "POST",
+
+					url: "contact_form/contact_process.php",
+
+					data: str,
+
+					success: function(msg) {
+
+						// Message Sent - Show the 'Thank You' message and hide the form
+
+						if(msg == 'OK') {
+
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+
+							$("#fields").hide();
+
+						} else {
+
+							result = msg;
+
+						}
+
+						$('#note').html(result);
+
+					}
+
+				});
+
+				return false;
+
+			});
+
+
+
+		});
+
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+
+{
+
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+
+<script type="text/javascript">
+function toggleMe(a){
+var e=document.getElementById(a);
+var i = document.getElementById(a + '_image');
+if(!e)return true;
+if(e.style.display=="none"){
+e.style.display="block"
+i.src = 'images/minus.png';
+} else {
+e.style.display="none"
+i.src = 'images/plus.png';
+}
+return false;
+}
+</script>
+
+
+
+
+    <body onLoad="MM_preloadImages('images/LoL/rules_2.png','images/LoL/single_2.png','images/LoL/team_2.png','faq_2.png','fb_button1.png','images/LoL/fb_button1.png')">
+
+<!--
+<div class="opencontainer">
+    <div id="contactFormContainer">
+        <div id="contactForm">
+        	<div class="loader"></div>
+			<div class="bar"></div>
+            <form action="mail.php" class="contactForm" name="cform" method="post">
+                <contactfontp>Hi there! Please use this contact form if you have any questions or concerns regarding the UCLA CKI League of Legend Tournament. Please also utilize our FAQ before submitting a question/concern.</contactfontp>
+                <div class="input_boxes">
+                    <contactfontp><label for="name">Name</label><span class="name-missing">Please enter your name</span><br />
+                    <input id="name" type="text" value="" name="name" /></contactfontp>
+                    <contactfontp><label for="e-mail">E-mail</label><span class="email-missing">Please enter a valid e-mail</span><br />
+                    <input id="e-mail" type="text" value="" name="email" /></contactfontp>
+                    <contactfontp><label for="message">Message</label><span class="message-missing">Say something!</span><br />
+                    <textarea id="message" rows="" cols="" name="message"></textarea></contactfontp>
+                 </div>
+                 <input class="submit" type="submit" name="submit" value="Submit Form" onfocus="this.blur()"  />
+            </form>
+      </div>
+      <div class="contact"></div>
+  </div>
+-->
+
+
+</div>
+
+<div class="navo">
+<ul class="navigation">
+    <li data-slide="1">Home</li>
+    <li data-slide="2">About</li>
+    <li data-slide="3">Rules</li>
+    <li data-slide="4">Registration</li>
+    <li data-slide="5">Bracket</li>
+    <li data-slide="6">FAQ</li>
+    <li data-slide="7">Donate</li>
+    <li data-slide="8">Contact</li>
+    <li data-slide="9">Sponsor</li>
+  </ul>
+</div>
+</head>
+
+<body>
+
+
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+		<div class="logo" align="center">
+
+        <img src="images/LoL/logo_only.png">
+    </div>
+		<!-- image is too stretched, shifted right
+     use ghost button or leave as is -->
+
+	</div><!--End Slide 1-->
+
+
+
+	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+        <div class="center slide-back">
+          <br><br><br><br><br><br><br><br>
+          <h4>About the Event</h4>
+          <br>
+          <p>
+        All proceeds go towards Alexandria House, our beneficiary.
+        <br>
+        <br>
+        "Founded in 1996, Alexandria House is a non-profit transitional residence and house of hospitality providing safe and supportive
+        housing for women and children in the process of moving from emergency shelter to permanent housing... Alexandria House also serves its broader neighborhood community by providing educational and enrichment opportunities for residents and neighbors alike... The goal of Alexandria House is to be a community-oriented transitional house and neighborhood center which is intentionally multicultural, antiracist and where the needs of women who are economically poor are central." More information can be found at <a href="http://alexandriahouse.org/">http://alexandriahouse.org/</a>, but now you're probably wondering how YOU can help! </p>
+          <br>
+          <p>  This year we are hosting our SECOND annual League for Charity Tournament. The tournament is allowed for anyone to enter and it will be played entirely online. Each week, teams of five will have to challenge an opposing team in a match to seal their spot in the coveted next round. The last three teams standing will win cash prizes of ($100, $75, $25), products valued up to $300. Entry fee is $5 per person ($25 per team) and all proceeds raised from this event will go directly to our local beneficiary Alexandria House, a Los Angeles based transitional home for women and children in the area. </p>
+          <br>
+          UPDATE:
+          <br>
+          Additional prizes have been announced!
+          <br>
+          1st place: 3200 RP & Triumphant Ryze Skin for every player of the winning team
+          <br>
+          2nd place: 2400 RP per player
+          <br>
+          3rd place: 1600 RP per player
+          <br>
+          4th place: 800 RP per player
+          <br>
+          <br>
+    </div>
+	</div><!--End Slide 2-->
+
+	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+		<div class="center slide-back">
+      <br><br><br><br><br><br><br><br><br>
+          <p><a href="LoLforCharity_TournamentRules.pdf" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/LoL/rules_2.png',1)"><img id="Image3" src="images/LoL/rules_1.png"></a></p>
+
+          <p> Please read these rules before registering for the tournament. <br>
+
+          Thank you.</p>
+           <a href="http://www.uclacki.org/lolcharity/LoLforCharity_TournamentRules.pdf" class="buttonphoto" title="">Tournament Rules<span></span></a><br><br>
+      </div>
+	</div><!--End Slide 3-->
+
+	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+				<div class="slide-back left" align="center">
+      <br><br><br><br><br><br><br><br><br>
+    <p><a href="singlesignup.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/LoL/single_2.png',1)"><img id="Image4" src="images/LoL/single_1.png"></a></p>
+
+    <p>If you are a single player or <u>a team of less than 5 players</u> and would like to be assigned into a team, please use this form to sign up for the tournament.</p>
+    <div class="button_block">
+            <div class="button_bg"></div>
+            <div align="center"> <a href="http://www.uclacki.org/lolcharity/singlesignup.html" class="buttonphoto" title="">Single Registration Form</a></div><br>
+    </div>
+       </div>
+
+			 <div class="slide-back right" align="center">
+        <br><br><br><br><br><br><br><br><br>
+      <p><a href="teamsignup.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/LoL/team_2.png',1)"><img id="Image5" src="images/LoL/team_1.png"></a></p>
+
+    <p>If you have a full team of 5 players, please use this form to sign up for the tournament.
+    </p>
+    <div class="button_block">
+            <div class="button_bg"></div>
+            <div align="center"> <a href="http://www.uclacki.org/lolcharity/teamsignup.html" class="buttonphoto" title="">Team Registration Form</a></div><br><br>
+        </div>
+        </div>
+	</div> <!--End Slide 4-->
+
+  <div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+
+    <div class="container clearfix">
+
+      <div id="content" class="grid_12">
+
+        <div class="bracket" align="center"><br>
+        <iframe src="http://challonge.com/LoLForCharity/module" width="100%" height="1050" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+        <div class="h1_viva"></div>
+</div>
+            <div class="clear"></div>
+
+      </div>
+
+    </div>
+
+      </div>
+<!--End Slide 5-->
+
+	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+		<div class="center slide-back">
+		<br><br><br><br><br><br><br><br><br><h4>
+        FAQ</h4>
+        <br>
+    <p><a style="cursor:pointer;" onclick="return toggleMe('lvl30')"><img id="lvl30_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />Do I have to be level 30?</a></p>
+    <div id="lvl30" style="display:none;">
+    If you are registering as a team, it is not required for you to be level 30. However, if you are registering as a single player, we would like for you to be level 30 or we cannot guarantee you a spot on a team.
+    </div>
+
+    <p><a style="cursor:pointer;" onclick="return toggleMe('pay')"><img id="pay_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />Can we pay in person?</a></p>
+    <div id="pay" style="display:none;">
+    Unless you are a UCLA student, no. This year we will be accepting Venmo though.
+    </div>
+
+    <p><a style="cursor:pointer;" onclick="return toggleMe('sub')"><img id="sub_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />Are substitutes allowed to come in during the game if someone is unable to reconnect?</a></p>
+    <div id="sub" style="display:none;">
+    No, connectivity issues are at the players discretion. We will only reward rematches if the Riot servers are responsible for the connectivity issue.
+    </div>
+
+    <p><a style="cursor:pointer;" onclick="return toggleMe('phone')"><img id="phone_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />Will phone numbers of the game officials be provided for them to call during the time of the match?</a></p>
+    <div id="phone" style="display:none;">
+    E-mail is the best way to contact game officials, they will all be checking their e-mails rigorously.
+    </div>
+
+    <p><a style="cursor:pointer;" onclick="return toggleMe('match')"><img id="match_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />Will the match-ups be random or by stats?</a></p>
+    <div id="match" style="display:none;">
+    They will be random.
+    </div>
+
+    <p><a style="cursor:pointer;" onclick="return toggleMe('prize')"><img id="prize_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />How will we be receiving our prizes?</a></p>
+    <div id="prize" style="display:none;">
+    We will mail you your prizes.
+    </div>
+
+     <p><a style="cursor:pointer;" onclick="return toggleMe('pair')"><img id="pair_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />How will I be paired up with other players if I registered as a single player?</a></p>
+    <div id="pair" style="display:none;">
+    If you register as a single player you will be randomly placed into a team with other single players.
+    </div>
+
+     <p><a style="cursor:pointer;" onclick="return toggleMe('info')"><img id="info_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />What do we do when we can not reach our opposing team to arrange game information?</a></p>
+    <div id="info" style="display:none;">
+    If there is any problem contacting the opposing team, please email us at ckilolforcharity@gmail.com. If the team does not respond by the end of the week, your team will win by default.
+    </div>
+
+     <p><a style="cursor:pointer;" onclick="return toggleMe('bracket')"><img id="bracket_image" src="images/plus.png" style="border:0;margin-right:5px;vertical-align:middle;" />Will a game bracket be uploaded on the website or Facebook page?</a></p>
+    <div id="bracket" style="display:none;">
+    They will be uploaded on both.
+    </div>
+    <br><br>
+		</div>
+	</div><!--End Slide 6-->
+
+	<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+		<div class="left slide-back" align ="center">
+			<br><br><br><br><br><br><br><br><br><h4>
+			DONATE</h4>
+<p><a href="https://www.facebook.com/events/618685138197824/?ref_notif_type=plan_mall_activity&source=1" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/LoL/fb_button1.png',1)"><img src="images/LoL/donate2.png" alt="" id="Image"></a></p>
+<p>All donations are welcome!</p>
+<div class="button_block">
+<div class="button_bg"></div>
+<div align="center"> <a href="http://www.uclacki.org/lolcharity/LoLforCharity_TournamentRules.pdf" class="buttonphoto" title="">Donate</a></div>
+<br>
+</div>
+</div>
+      <div class="right slide-back" align=center>
+			<br><br><br><br><br><br><br><br><br><h4>
+        FACEBOOK</h4>
+      <p><a href="https://www.facebook.com/events/618685138197824/?ref_notif_type=plan_mall_activity&source=1" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/LoL/fb_button1.png',1)"><img id="Image8" src="images/LoL/fb_button.png"></a></p>
+      <p>Check out our FaceBook Event!</p>
+      <div class="button_block">
+        <div class="button_bg"></div>
+        <div align="center"> <a href="http://www.uclacki.org/lolcharity/LoLforCharity_TournamentRules.pdf" class="buttonphoto" title="">Facebook</a></div>
+        <br>
+      </div>
+    </div>
+
+	</div><!--End Slide 7-->
+
+  <div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+   <div class="center slide-back">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><h4>
+      CONTACT US!
+      <br>
+    </h4>
+    <p style="text-align:center">Ann Nguyen | ckilolforcharity@gmail.com</p>
+   </div>
+ </div><!--End Slide 8-->
+
+	<div class="slide" id="slide9" data-slide="9" data-stellar-background-ratio="0">
+		 <div class="center slide-back"><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h4>Thank You to Our Sponsor!</h4><br>
+      <a style="text-align: center;" href="http://coolermaster.com/" target="_blank"><img src="http://tweakers.net/ext/f/rGIQAivPs89oKfsjk4qbB4eZ/full.png" width="150" height="150" /></a><br><br>
+		</div>
+	</div> <!--End Slide 9-->
+
+</body>
+</html>

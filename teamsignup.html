@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="quform/css/pagestyles.css" />
+<link rel="stylesheet" type="text/css" href="quform/css/standard.css" />
+<style type="text/css">
+h1{
+  font-variant: small-caps;
+  text-decoration: underline;
+  }
+#apDiv2 {
+	position: relative;
+	width: 200px;
+	height: 115px;
+	z-index: -900;
+	left: -380px;
+	top: 175px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#apDiv1 {
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+	z-index: 3000;
+	left: 0px;
+	top: 0px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#apDiv3 {
+	position: absolute;
+	width: 918px;
+	height: 722px;
+	z-index: -899;
+	left: 34px;
+	top: 437px;
+}
+#apDiv4 {
+	position: relative;
+	width: 200px;
+	height: 115px;
+	left: -95px;
+	top: -70px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: 2;
+}
+</style>
+
+
+<script type="text/javascript" src="quform/js/jquery.js"></script>
+<script type="text/javascript" src="quform/js/plugins.js"></script>
+<script type="text/javascript" src="quform/js/scripts.js"></script>
+<script type="text/javascript" src="quform/js/jquery.maskedinput.min.js"></script>
+
+
+<title>Team Registration</title>
+
+<body>
+
+<video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
+			<source src="quform/video/S3_World_Championships.mp4" type="video/mp4"/>			<source src="quform/video/S3_World_Championships.webm" type="video/webm"/>			
+	Video not supported</video>
+   
+<!-- <video id="video_background2" preload="auto" autoplay="true" loop="loop" muted volume="0">
+			<source src="quform/video/final.mp4" type="video/mp4"/>			<source src="quform/video/final.webm" type="video/webm"/>			
+	Video not supported</video>-->
+
+ 
+ 
+ <div id="apDiv1">
+<div id="apDiv3"><img src="images/frames/gold frame_modified2.png" width="940" height="1650" /></div>
+<div id="apDiv2"><img src="images/frames/frame1.png" width="961" height="327" /></div>
+<div id="apDiv4"><img src="images/LoL/logo_only.png" width="422" height="170" /></div>
+
+<form class="quform" action="quform/process.php" method="post" enctype="multipart/form-data">
+            <div class="quform-wrapper">
+   	  
+   	            <div class="quform-title0">
+                  <p><a href="LoLforCharity_TournamentRules2015.pdf">Tournament Rules</a>
+   	              <p>Thank you for participating in the second ever UCLA CKI-sponsored </p>
+   	              <p>League of Legends Tournament!<br />
+   	                <br>REGISTRATION DATES:<br />
+</p>
+   	              <p>11:59 PM (03/20/2015) - 11:59 PM (04/03/2015) <br />
+                  </p>
+   	              <p>TOURNAMENT DATES: </p>
+   	              <p>Monday, April 6th, 2015 - last team standing
+  </p>
+                  </p>
+   	            </div>
+    </div>
+          <div class="quform-wrapper">
+            <div class="quform-inner">
+   	              <div class="quform-title">
+   	                <p>Please fill out all required fields (*Required)</p>
+   	                <p>Team Registration: $25</p>
+   	              </div>
+	                <div class="quform-elements clearfix">  
+	                  <div style="text-align:center;">
+  <h1 style="padding-bottom:20px;">Step 1: Information</h1>
+</div>                  
+                        <!-- Begin Team_Name element -->
+                        <div class="element-wrapper Team_name-element-wrapper clearfix">
+                          <label for="Team_name">Team Name <span class="red">*</span></label>
+                            <div class="input-wrapper Team_name-input-wrapper">
+                                <input class="Team_name-element quform-tooltip" id="Team_name" type="text" name="Team_name" title="Please enter your Team Name" />
+                            </div>
+                        </div>
+                        <!-- End Team_Name element -->
+                         <!-- Begin Leader_Name element -->
+                        <div class="element-wrapper Leader_name-element-wrapper clearfix">
+                          <label for="Leader_name">Team Leader's Name <span class="red">*</span></label>
+                            <div class="input-wrapper Leader_name-input-wrapper">
+                              <input class="Leader_name-element quform-tooltip" id="Leader_name" type="text" name="Leader_name" placeholder="Last Name, First Name" title="Enter the Team Leader's Name"/>
+                            </div>
+                        </div>
+                        <!-- End Name element -->
+                        <!-- Begin Email element -->
+                        <div class="element-wrapper email-element-wrapper clearfix">
+                          <label for="email">Email <span class="red">*</span></label>
+                            <div class="input-wrapper email-input-wrapper">
+                                <input class="email-element quform-tooltip" id="email" type="text2" name="email" title="Please enter the Team Leader's Email" />
+                            </div>
+                        </div>
+                        <!-- End Email element -->
+                        <!-- Begin Phone element -->
+                         
+                        <div class="element-wrapper Leader_phone-element-wrapper clearfix">
+                        
+                          <label for="Leader_phone">Phone <span class="red">*</span></label>
+                            <div class="input-wrapper Leader_phone-input-wrapper">
+                                <input class="Leader_phone-element quform-tooltip" id="Leader_phone" type="text" name="Leader_phone" title="Enter the Team Leader contact information (###)###-####"  />
+                                <script type="text/javascript">
+    $(function() {
+        $.mask.definitions['~'] = "[+-]";
+        $("#Leader_phone").mask("(999) 999-9999");
+       
+    });
+	
+</script>
+                              <br />
+                            </div>
+                        </div>
+            </div>
+                 
+            </div>
+                        <br />
+                        <!-- End Phone element -->
+                  <div class="quform-title2">Team information</div>
+  </div>
+            
+  <div class="quform-leftwrapper">
+                      <div class="quform-inner">
+                         <!-- Begin Player 1 Name/Summoner element -->
+                        <div class="element-wrapper Player1_name-element-wrapper clearfix">
+                          <label for="Player1_name">Player #1 Real Name <span class="red">*</span></label>
+                          <span class="element-wrapper Summoner1_name-element-wrapper clearfix">
+                         <span style="float:right"> <label for="Summoner1_name">Player #1 Summoner Name <span class="red">*</span></label></span>
+                          </span>
+                          <div class="input-wrapper Player1_name-input-wrapper">
+                             <input class="Player1_name-element quform-tooltip" id="Player1_name" type="text" name="Player1_name" placeholder="Last Name, First Name"/>
+                            
+                            <span class="input-wrapper Summoner1_name-input-wrapper">
+                             <span style="float:right"><input class="Summoner1_name-element quform-tooltip" id="Summoner1_name" type="text" name="Summoner1_name" title="Enter Player 1's Summoner Name"/></span>
+                          </span></div>
+                  </div>
+                        <!-- End Player 1 Name/Summoner element -->  
+                        <!-- Begin Summoner1 element -->
+                     
+                        <div class="element-wrapper Summoner1_name-element-wrapper clearfix">
+                          <div class="input-wrapper Summoner1_name-input-wrapper"></div>
+                  </div>
+                        <!-- End Summoner 1 element -->
+                       
+                           <!-- Begin Player 2 Name/Summoner element -->
+                          
+                        <div class="element-wrapper Player2_name-element-wrapper clearfix">
+                          <label for="Player2_name">Player #2 Real Name <span class="red">*</span></label>
+                          <span class="element-wrapper Summoner2_name-element-wrapper clearfix">
+                         <span style="float:right"> <label for="Summoner2_name">Player #2 Summoner Name <span class="red">*</span></label></span>
+                          </span>
+                          <div class="input-wrapper Player2_name-input-wrapper">
+                             <input class="Player2_name-element quform-tooltip" id="Player2_name" type="text" name="Player2_name" placeholder="Last Name, First Name"/>
+                            
+                            <span class="input-wrapper Summoner2_name-input-wrapper">
+                             <span style="float:right"><input class="Summoner2_name-element quform-tooltip" id="Summoner2_name" type="text" name="Summoner2_name" title="Enter Player 2's Summoner Name"/></span>
+                          </span></div>
+                  </div>
+ 
+                        <!-- End Player 2 Name/Summoner element -->
+                         <!-- Begin Summoner 2 element -->
+                     
+                        <div class="element-wrapper Summoner2_name-element-wrapper clearfix">
+                          <div class="input-wrapper Summoner2_name-input-wrapper"></div>
+                  </div>
+                        <!-- End Summoner 2 element -->
+                        
+                          <!-- Begin Player 3 Name/Summoner element --> 
+  <div class="element-wrapper Player3_name-element-wrapper clearfix">
+                          <label for="Player3_name">Player #3 Real Name <span class="red">*</span></label>
+                          <span class="element-wrapper Summoner3_name-element-wrapper clearfix">
+                         <span style="float:right"> <label for="Summoner3_name">Player #3 Summoner Name <span class="red">*</span></label></span>
+                          </span>
+                          <div class="input-wrapper Player3_name-input-wrapper">
+                             <input class="Player3_name-element quform-tooltip" id="Player3_name" type="text" name="Player3_name" placeholder="Last Name, First Name"/>
+                            
+                            <span class="input-wrapper Summoner3_name-input-wrapper">
+                             <span style="float:right"><input class="Summoner3_name-element quform-tooltip" id="Summoner3_name" type="text" name="Summoner3_name" title="Enter Player 3's Summoner Name"/></span>
+                          </span></div>
+                  </div>
+                        <!-- End Player 3 Name/Summoner element -->
+                         <!-- Begin Summoner 3 element -->
+                     
+                        <div class="element-wrapper Summoner3_name-element-wrapper clearfix">
+                          <div class="input-wrapper Summoner3_name-input-wrapper"></div>
+  </div>
+                        <!-- End Summoner 3 element -->
+                        
+                           <!-- Begin Player 4 Name/Summoner element -->
+                          
+                        <div class="element-wrapper Player4_name-element-wrapper clearfix">
+                          <label for="Player4_name">Player #4 Real Name <span class="red">*</span></label>
+                          <span class="element-wrapper Summoner4_name-element-wrapper clearfix">
+                         <span style="float:right"> <label for="Summoner4_name">Player #4 Summoner Name <span class="red">*</span></label></span>
+                          </span>
+                          <div class="input-wrapper Player4_name-input-wrapper">
+                             <input class="Player4_name-element quform-tooltip" id="Player4_name" type="text" name="Player4_name" placeholder="Last Name, First Name"/>
+                            
+                            <span class="input-wrapper Summoner4_name-input-wrapper">
+                             <span style="float:right"><input class="Summoner4_name-element quform-tooltip" id="Summoner4_name" type="text" name="Summoner4_name" title="Enter Player 4's Summoner Name"/></span>
+                          </span></div>
+                  </div>
+                        <!-- End Player 4 Name/Summoner element -->
+               <!-- Begin Summoner 4 element -->
+                     
+                        <div class="element-wrapper Summoner4_name-element-wrapper clearfix">
+                          <div class="input-wrapper Summoner4_name-input-wrapper"></div>
+                  </div>
+                        <!-- End Summoner 4 element -->
+                        
+                         <!-- Begin Player 5 Name/Summoner element --> 
+                        <div class="element-wrapper Player5_name-element-wrapper clearfix">
+                          <label for="Player5_name">Player #5 Real Name <span class="red">*</span></label>
+                          <span class="element-wrapper Summoner5_name-element-wrapper clearfix">
+                         <span style="float:right"> <label for="Summoner5_name">Player #5 Summoner Name <span class="red">*</span></label></span>
+                          </span>
+                          <div class="input-wrapper Player5_name-input-wrapper">
+                             <input class="Player5_name-element quform-tooltip" id="Player5_name" type="text" name="Player5_name" placeholder="Last Name, First Name"/>
+                            
+                            <span class="input-wrapper Summoner5_name-input-wrapper">
+                             <span style="float:right"><input class="Summoner5_name-element quform-tooltip" id="Summoner5_name" type="text" name="Summoner5_name" title="Enter Player 5's Summoner Name"/></span></span>
+                          </span></div>
+                  </div>
+                  
+                        <!-- End Player 5 Name/Summoner element -->
+                         
+                         
+                       
+    <!-- Number_substitutes element -->
+     
+                         <div class="quform-wrapper">
+                        <div class="element-wrapper multi_select-element-wrapper clearfix">
+                            <label for="Number_substitutes">Number of Substitutes <span class="red">*</span></label>
+                            <div class="input-wrapper Number_substitutes-input-wrapper clearfix">
+                                <select id="Number_substitutes" name="Number_substitutes[]" multiple="Number_substitutes">
+                                    <option value="0 Substitutes">0</option>
+                                    <option value="1 Substitute">1</option>
+                                    <option value="2 Substitutes">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- End Number_substitutes element -->
+                        
+                         <!-- Begin Substitute_roster element -->
+                        <div class="element-wrapper Substitute_roster_input-element-wrapper clearfix">
+                            <label for="Substitute_roster_input">Substitute Roster</label>
+                            <div class="input-wrapper Substitute_roster_input-input-wrapper clearfix">
+                                <textarea class="Substitute_roster_input-element" id="Substitute_roster_input" name="Substitute_roster_input" rows="7" cols="45" placeholder="List the substitutes by: Last Name, First Name, Summoner Name"></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- End Substitute_roster element -->
+                        
+                          <!-- Begin Comment_questions element -->
+                        <div class="element-wrapper Comment_questions_input-element-wrapper clearfix">
+                            <label for="Comment_questions_input">Comments, Questions, or Concerns</label>
+                            <div class="input-wrapper Comment_questions_input-input-wrapper clearfix">
+                                <textarea class="Comment_questions_input-element" id="Comment_questions_input" name="Comment_questions_input" rows="7" cols="45"></textarea>
+                            </div>
+                        </div>
+                        </div>
+                        <div style="text-align:center;">
+  <h1 style="padding-bottom:20px;">Step 2: Payment ($25)</h1>
+</div>
+
+<div style="text-align:center">
+  
+ <a href="https://venmo.com/?txn=pay&recipients=uclacki&amount=25.00&note=League%20for%20Charity%20Single%20Team%20Up&share=t%2Cf&audience=public" onclick="window.open('https://venmo.com/?txn=pay&recipients=uclacki&amount=25.00&note=League%20for%20Charity%20Single%20Team%20Up&share=t%2Cf&audience=public', 'newwindow', 'width=1128, height=325'); return false;">
+  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQXPxW87ADZBPUr4qoN_2HV9XTAXU5_e2_5LDXJa7mTv3AlCvzzQ" width="171" height="50">
+  </a> 
+  
+  <h3>Pay via Venmo (@uclacki)</h3>
+  <br>
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MFE7WT2RPCZNJ" onclick="window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MFE7WT2RPCZNJ', 'newwindow', 'width=1128, height=996'); return false;">
+    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"></a>
+  <h3>Pay Via Paypal</h3>
+</div>
+
+<div style="text-align:center;">
+  <h1 style="padding-bottom:20px;">Step 3: Register!</h1>
+</div>
+                        <!-- End Comment_questions element -->
+                       
+                        <!-- Begin Submit button -->
+                        <div class="button-wrapper submit-button-wrapper clearfix">
+                          <div class="quform-loading-wrap"><span class="loading">Transferring you to the confirmation page...</span></div>
+                          <div class="button-input-wrapper submit-button-input-wrapper">
+                              <input type="submit" class="quform-submit-button" value="Submit your Registration" name="boom" />
+                          </div>
+                        </div>
+                        <!-- End Submit button -->
+                        <br >
+                        <br>
+                        <div align="center"><div class="quform-title2">Thank you for registering! Good luck in the tournament!</div></div>
+  
+                         <!-- .quform-elements -->
+          </div>
+       <!-- .quform-inner --><!-- .quform-wrapper -->  
+                   
+</form></div>
+	</div><!-- .quform-outer -->	
+   
+</body>
+
+</html>

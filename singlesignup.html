@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="quform/css/pagestyles.css" />
+<link rel="stylesheet" type="text/css" href="quform/css/standard.css" />
+<style type="text/css">
+
+h1{
+  font-variant: small-caps;
+  text-decoration: underline;
+  }
+
+#apDiv2 {
+	position: relative;
+	width: 200px;
+	height: 115px;
+	z-index: -900;
+	left: -380px;
+	top: 200px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:-3000;
+}
+#apDiv1 {
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+	z-index: 2000;
+	left: 0px;
+	top: 0px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#apDiv3 {
+	position: absolute;
+	width: 918px;
+	height: 722px;
+	z-index: -99999;
+	left: 18px;
+	top: 473px;
+	z-index: -2000;
+}
+#apDiv4 {
+	position: relative;
+	width: 200px;
+	height: 115px;
+	left: -95px;
+	top: -50px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: -3000;
+}
+</style>
+<script type="text/javascript" src="quform/js/jquery.js"></script>
+<script type="text/javascript" src="quform/js/plugins.js"></script>
+<script type="text/javascript" src="quform/js/scripts.js"></script>
+<script type="text/javascript" src="quform/js/jquery.maskedinput.min.js"></script>
+
+
+<title>Single Registration</title>
+
+<body>
+<video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
+  <source src="quform/video/S3_World_Championships.mp4" type="video/mp4"/>			<source src="quform/video/S3_World_Championships.webm" type="video/webm"/>			
+Video not supported</video>
+   
+ <!--<video id="video_background2" preload="auto" autoplay="true" loop="loop" muted volume="0">
+			<source src="quform/video/final.mp4" type="video/mp4"/>			<source src="quform/video/final.webm" type="video/webm"/>			
+	Video not supported</video>
+<div class="quform-outer">-->
+</div>
+<div id="apDiv1">
+<div id="apDiv3"><img src="images/frames/gold frame_modified.png" width="968" height="1080" /></div>
+<div id="apDiv2"><img src="images/frames/frame1.png" width="961" height="327" /></div>
+<div id="apDiv4"><img src="images/LoL/logo_only.png" width="422" height="170" /></div>
+
+
+<form class="quform" action="quform/singleprocess.php" method="post" enctype="multipart/form-data">
+            <div class="quform-wrapper">
+   	            <h1>&nbsp;</h1>
+                           
+<div class="quform-title0">
+  <p><a href="LoLforCharity_TournamentRules2015.pdf">Tournament Rules</a>
+                  </p>
+  <p>Thank you for participating in the second ever UCLA CKI-sponsored </p>
+   	              <p>League of Legends Tournament!<br />
+   	                <br>REGISTRATION DATES:<br />
+</p>
+   	              <p>11:59 PM (03/20/2015) - 11:59 PM (04/03/2015) <br />
+                  </p>
+   	              <p>TOURNAMENT DATES: </p>
+   	              <p>Monday, April 6th, 2015 - last team standing
+  </p>
+                  </p>
+            </div>
+  </div>
+  <div class="quform-wrapper">
+            <div class="quform-inner">
+   	              <div class="quform-title">
+   	                <p>Please fill out all required fields (*Required)</p>
+   	                <p>Single registration: $5 per Player</p>
+   	              </div>
+	                <div class="quform-elements clearfix">  
+	                
+	                <div style="text-align:center;">
+  <h1 style="padding-bottom:20px;">Step 1: Information</h1>
+</div>
+                  
+                      <!-- Begin Team_Name element -->
+                        <div class="element-wrapper Name-element-wrapper clearfix">
+                          <label for="Name">Your Real Name <span class="red">*</span></label>
+                            <div class="input-wrapper Name-input-wrapper">
+                                <input class="Name-element quform-tooltip" id="Name" type="text" name="Name" placeholder="Last name, First name" title="Please enter your real birth name" />
+                            </div>
+                        </div>
+                        <!-- End Team_Name element -->
+                         <!-- Begin Summoner element -->
+                        <div class="element-wrapper Summoner_name-element-wrapper clearfix">
+                          <label for="Summoner_name">Your Summoner Name <span class="red">*</span></label>
+                            <div class="input-wrapper Summoner_name-input-wrapper">
+                              <input class="Summoner_name-element quform-tooltip" id="Summoner_name" type="text" name="Summoner_name" title="Please enter your League of Legend Summoner name!"/>
+                            </div>
+                        </div>
+                        <!-- End Summoner element -->
+                        
+                         <!-- Begin Role element -->
+                        <div class="element-wrapper Role-element-wrapper clearfix">
+                          <label for="Role">Preferred Role <span class="red">*</span></label>
+                            <div class="input-wrapper Role-input-wrapper">
+                              <input class="Role-element quform-tooltip" id="Role" type="text" name="Role" title="Examples: Top, Mid, Support, Jungle, ADC, etc"/>
+                            </div>
+                        </div>
+                        <!-- End Role element -->
+                        
+                        <!-- Begin Email element -->
+                        <div class="element-wrapper email-element-wrapper clearfix">
+                          <label for="email">Email <span class="red">*</span></label>
+                            <div class="input-wrapper email-input-wrapper">
+                                <input class="email-element quform-tooltip" id="email" type="text2" name="email" title="Please enter your Email!" />
+                            </div>
+                        </div>
+                        <!-- End Email element -->
+                        <!-- Begin Phone element -->
+                         
+                        <div class="element-wrapper Leader_phone-element-wrapper clearfix">
+                        
+                          <label for="phone">Phone <span class="red">*</span></label>
+                            <div class="input-wrapper phone-input-wrapper">
+                                <input class="phone-element quform-tooltip" id="phone" type="text" name="phone" title="Enter your contact information!  (###)###-####"  />
+                                <script type="text/javascript">
+    $(function() {
+        $.mask.definitions['~'] = "[+-]";
+        $("#phone").mask("(999) 999-9999");
+       
+    });
+	
+</script>
+         
+                              <br />
+                            </div>
+                      </div>
+                         
+                 </div>
+                   <!-- Begin Comment_questions element -->
+                        <div class="element-wrapper Comment_questions_input-element-wrapper clearfix">
+                            <label for="Comment_questions_input">Comments, Questions, or Concerns</label>
+                            <div class="input-wrapper Comment_questions_input-input-wrapper clearfix">
+                                <textarea class="Comment_questions_input-element" placeholder="If you would like to request to be placed on a team with a player or players, please indicate their full name and summoner name. Note that this is only guaranteed if the requests are mutual and appear on all players' registration forms." id="Comment_questions_input" name="Comment_questions_input" rows="7" cols="45"></textarea>
+                            </div>
+                        </div>
+                        <div style="text-align:center;">
+  <h1 style="padding-bottom:20px;">Step 2: Payment ($5)</h1>
+</div>
+
+<div style="text-align:center">
+  
+ <a href="https://venmo.com/?txn=pay&amp;recipients=uclacki&amp;amount=5.00&amp;note=League%20for%20Charity%20Single%20Sign%20Up&amp;share=t%2Cf&amp;audience=public" onclick="window.open('https://venmo.com/?txn=pay&amp;recipients=uclacki&amp;amount=5.00&amp;note=League%20for%20Charity%20Single%20Sign%20Up&amp;share=t%2Cf&amp;audience=public', 'newwindow', 'width=1128, height=325'); return false;">
+  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQXPxW87ADZBPUr4qoN_2HV9XTAXU5_e2_5LDXJa7mTv3AlCvzzQ" width="171" height="50">
+  </a> 
+  
+  <h3>Pay via Venmo (@uclacki)</h3>
+  <br>
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DUBMCNZZGRVEN" onclick="window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DUBMCNZZGRVEN', 'newwindow', 'width=1128, height=996'); return false;">
+    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"></a>
+  <h3>Pay Via Paypal</h3>
+</div>
+
+<div style="text-align:center;">
+  <h1 style="padding-bottom:20px;">Step 3: Register!</h1>
+</div>
+                        <!-- End Comment_questions element -->
+                       
+                        <!-- Begin Submit button -->
+                        <div class="button-wrapper submit-button-wrapper clearfix">
+                          <div class="quform-loading-wrap"><span class="loading">Transferring to a confirmation page...</span></div>
+                            <div class="button-input-wrapper submit-button-input-wrapper">
+                              <input type="submit" class="quform-submit-button" value="Submit your Registration" name="boom" />
+                          </div>
+                        </div>
+                        <!-- End Submit button --><br>
+                        <br>
+                        <br>
+  
+  <div class="quform-title2">Thank you for Registering! Good luck in the tournament!</div>
+  
+  
+  </div>   <!-- .quform-elements --><!-- .quform-inner --><!-- .quform-wrapper -->  
+                   
+</form>
+  
+  
+	</div><!-- .quform-outer --><br />
+                         <!-- End Phone element -->
+               
+ 
+                 </div>       
+  
+   
+</body>
+
+</html>
