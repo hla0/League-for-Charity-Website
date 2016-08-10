@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('font/BEBAS___-webfont.eot');
+    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BEBAS___-webfont.woff') format('woff'),
+         url('font/BEBAS___-webfont.ttf') format('truetype'),
+         url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,body {
+	width:100%;
+	height:100%;
+	color:white;
+
+}
+
+h4 {
+	font-size: 2em;
+}
+
+.navigation {
+    position:fixed;
+    z-index:1;
+    top:20px;
+    width:11.2%;
+    background-color: rgba(255,255,255,0.6);
+}
+.navigation li {
+    color:#333333;
+    display:block;
+    padding: 0 10px;
+    line-height:30px;
+    margin-bottom:2px;
+    font-weight:bold;
+    -webkit-transition: all .2s ease-in-out;
+    border-bottom:1px solid black;
+    text-align:left;
+    width:53px;
+}
+.navigation li:hover,
+.active {
+    font-size:25px;
+    cursor:pointer;
+    width:100px!important;
+}
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.wrapper{
+	width:960px;
+	height:200px;
+	margin:0 auto;
+	position:relative;
+}
+.slideno{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+}
+.button{
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	background-color:#333333;
+	background-image:url(../images/arrow.png);
+}
+.button:hover{
+	background-color:#494949;
+	cursor:pointer;
+}
+
+.logo {
+	position: absolute;
+	margin-left:15%;
+	margin-right: 30%;
+	top:54%;
+	width:76%;
+}
+.logo2 {
+	position: absolute;
+	margin-left:-5%;
+	margin-right: 30%;
+	top:50%;
+	width:76%;
+}
+
+.slide-back {
+  padding:2%;
+  height:70%;
+	width:76%;
+	background-color: rgba(0,0,0,.65);
+}
+.center {
+	position: absolute;
+	margin-left:12%;
+	margin-right: 30%;
+	text-align: center;
+	top:10%;
+  height:70%;
+	width:76%;
+	background-color: rgba(0,0,0,.65);
+}
+
+.left {
+	position: absolute;
+	margin-left: 12%;
+	top:12%;
+	width:36%;
+  height:70%;
+	background-color: rgba(0,0,0,.65);
+}
+
+
+.right {
+	position: absolute;
+	margin-left: 53%;
+	top:12%;
+	width:35%;
+  height:70%;
+	background-color: rgba(0,0,0,.65);
+}
+
+.bracket {
+  margin-left: 12%;
+  width: 80%;
+}
+
+/******************************
+ SLIDE 1
+*******************************/
+#slide1{
+	/*might change image for this since blurry at high stretch (TO DO)*/
+	background-image:url(../images/LoL/udyr.gif);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/******************************
+ SLIDE 2
+*******************************/
+#slide2{
+	background-image:url(../images/LoL/legend2.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/******************************
+ SLIDE 3
+*******************************/
+#slide3{
+	background-image:url(../images/LoL/legend3.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/******************************
+ SLIDE 4
+*******************************/
+
+#slide4{
+	background-image:url(../images/LoL/legend4.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide4 .parallaxbg{
+	position:absolute;
+	right:40px;
+	top:40px;
+	font-size:28px;
+	color:rgba(51,51,51,0.3);
+}
+
+#slide5 {
+  height:120%;
+	background-image:url(../images/LoL/legend10.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#slide6 {
+	background-image:url(../images/LoL/legend6.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#slide7 {
+	background-image:url(../images/LoL/legend11.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#slide8 {
+	background-image:url(../images/LoL/legend8.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#slide9 {
+	background-image:url(../images/LoL/legend9.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

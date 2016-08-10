@@ -1,0 +1,345 @@
+/* Global */
+
+body {
+	font-family: 'Tahoma', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height:20px;
+	color: #7a7a7a;
+	background-color:#ffffff;
+	overflow-x:hidden;
+}
+::selection {
+	background: #ff6600;
+	color:#fff;
+}
+::-moz-selection {
+	background: #ff6600; /* Firefox */
+	color:#fff;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #ff6600;
+	text-decoration: none;
+}
+a:hover {
+	color:#ff6600;
+}
+a:visited {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	padding:0;
+}
+h1 {
+	margin: 0 0 40px 0;
+	text-transform: uppercase;
+	text-align: left;
+	background: url(../images/h1_bord.png) repeat-x left bottom;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 52px;
+	line-height: 86px;
+	color: #CCCCCC;
+	font-weight: 400;
+}
+.h1_viva {
+	margin:0;
+	padding:0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:16px;
+	line-height:65px;
+	font-style:italic;
+	color:#6b6b6b;
+}
+
+h4 {
+	margin: 0;
+	padding: 0 0 15px 0;
+	text-transform: uppercase;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	font-style: normal;
+	line-height: 40px;
+	color: #0066CC;
+	text-align: left;
+}
+h5 {
+	margin:0;
+	padding:0 0 17px 0;
+	text-transform:none;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style:italic;
+	font-weight:400;
+	font-size:18px;
+	line-height:20px;
+	color:#343434;
+}
+
+h6 {
+	float: center;
+	margin: 0 13px 40px 0;
+	padding: 0 19px 0 0;
+	text-transform: uppercase;
+	font-style: normal;
+	background: none;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 70px;
+	line-height: 86px;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.21);
+	color:#FFFFFF
+	font-weight: 400;
+	text-align: center;
+	color: #FFF;
+}
+.h6_viva {
+	margin:0;
+	padding:0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:16px;
+	line-height:65px;
+	font-style:italic;
+	color:#FFFFF;
+}
+
+pinfo{
+	color: #66CCFF;
+	padding: 0 0 10px 0;
+	font-size: 24px;
+	font-family: Tahoma, sans-serif;
+}
+
+img.icon_img {
+	float:left;
+	margin-right:20px;
+	margin-top:20px;
+	margin-bottom:25px;
+}
+
+.effect_2 {
+	background:url(../images/effect_2.png) repeat left top;
+	position:relative;
+	top:0;
+	bottom:-57px;
+	height:100%;
+	z-index:999 !important;
+}
+
+
+
+
+/* ____________________________________ Slide 8 ____________________________________ */
+
+#slide8{
+	background-image: url(../images/LoL/Triumphant-Ryze.jpg);
+	background-size: cover;
+	background-position: 0 0 !important;
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	text-align:left;
+}
+
+
+
+#slide8 .container {margin-bottom:80px;
+}
+
+/* ____________________________________ Slide 9  (Entertainment) ____________________________________ */
+
+#slide9 {
+	background: url(../images/slide9_bg.jpg);
+	padding:100px 0 20px;
+}
+/* ____________________________________ Slide 10  (contact) ____________________________________ */
+
+#slide10 {
+	background: url(../images/Aboutpagesmall.png);
+	padding:100px 0 20px;
+}
+
+#slide9 .container {margin-bottom:80px;
+}
+
+
+/* ______________ CONTACT_FORM ______________ */
+::-webkit-input-placeholder { opacity:1 !important; color:#929292 !important;
+}
+:-moz-placeholder {opacity:1 !important; color:#929292 !important;
+}
+::-moz-placeholder { opacity:1 !important; color:#929292 !important;
+}
+:-ms-input-placeholder { opacity:1 !important; color:#929292 !important;
+}
+
+.contact_form input[type="text"],
+.contact_form textarea {
+	width:93%;
+	margin:22px 0 0 0;
+	padding:17px 10px 17px 21px;
+	background: #fff;
+	font-size:14px;
+	line-height:21px;
+	border:1px solid #e3e3e3;
+	color:#929292;
+}
+.contact_form input[type="text"]:first-child {margin-top:0;
+}
+.contact_form textarea {
+	resize: none;
+	margin-top:0;
+	height: auto;
+    min-height: 164px;
+}
+
+.contact_btn {
+	border:none;
+	text-transform:uppercase;
+	margin:0 4px 10px 0;
+	padding:12px 25px;
+	border-radius:30px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:300;
+	text-align: center;
+	vertical-align: middle;
+	background:#73aeb4;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	width:125px;
+}
+
+.contact_btn:hover,
+.send_btn {
+	background:#ff6600;
+}
+
+#note .notification_ok {
+	margin-top:20px;
+	padding:7px 10px;
+	text-align:center;
+	text-transform:uppercase;
+	background:#444;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:400;
+	font-size:14px;
+	color:#fff;
+}
+#note .notification_error {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:400;
+	font-size:16px;
+	color:#f00;
+}
+
+#note1 .notification_ok {
+	margin-top:20px;
+	padding:7px 10px;
+	text-align:center;
+	text-transform:uppercase;
+	background:#444;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:400;
+	font-size:14px;
+	color:#fff;
+}
+#note1 .notification_error {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:400;
+	font-size:16px;
+	color:#f00;
+}
+/* _____________ //CONTACT_FORM _____________ */
+
+
+#map_block {
+	margin:0;
+}
+
+
+/* ____________________________________ //Slide 8 ____________________________________ */
+
+/* ____________________________________ FOOTER ____________________________________ */
+#footer {
+	background: url(../images/sizes/150pxbg.png);
+	padding:27px 0 23px;
+}
+.copyright {
+	float:left;
+	text-transform:uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:300;
+	color:#00009B;
+}
+.copyright a {
+	color:#00009B;
+}
+.copyright a:hover {
+	text-decoration: none;
+	color: #00009B;
+}
+
+/* _____________ BACK_TOP ___________ */
+#back_top {
+	float: right;
+}
+#back_top a.button {
+	cursor:pointer;
+	position:relative;
+	z-index:300;
+	display:block;
+	background:url(../images/back_top_bg.png) no-repeat top right;
+	margin:0;
+	padding-right:20px;
+	width:93px;
+	height:20px;
+	text-transform:uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:300;
+	color:#00009B;
+}
+#back_top a.button:hover {text-decoration:none;}
+/* ____________ //BACK_TOP __________ */
+
+/* ___________________________________ //FOOTER ___________________________________ */
+#slide4 .container.clearfix #content #MyStyle p {
+	font-size: 20px;
+}
+#slide2 .container.clearfix #content #content .grid_6.omega h4 {
+	text-align: center;
+}
+#slide5 .effect_2.padding_slide5 .container.clearfix #content p {
+	text-align: center;
+}
+#slide9 .container.clearfix #content h2 span {
+	font-family: Tahoma, sans-serif;
+	font-size: 50px;
+	color: #0FC;
+	text-align: center;
+}
+#slide9 .container.clearfix #content h1 {
+	font-size: 50px;
+	color: #0FC;
+}
+#slide9 .container.clearfix #content h2 {
+	font-size: 18px;
+	color: #0FC;
+	text-align: left;
+	padding: 10px;
+	font-family: Tahoma, sans-serif;
+}
